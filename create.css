@@ -180,6 +180,17 @@ input {
 	margin: 0px 0px 0px 8px; 
 }
 
+.date {
+  position: relative;
+  width: 150px;
+  overflow: auto;
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #ffc185;
+  font-size: 21px;
+}
+
 .active-dx{
 	animation-name: foregrounding-dx;
 	animation-duration: 0.9s;
