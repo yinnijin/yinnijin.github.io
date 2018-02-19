@@ -22,12 +22,12 @@
       
   <form class="signUp" >
     <h3>Create Your Account</h3>
-    <input class="username" type="text" placeholder="User name" reqired autocomplete='off' onblur="validateForm(this.className)" />
-    <input class="w100" type="email" placeholder="Email Adress" reqired autocomplete='off' onblur="validateForm(this.className)" />
-    <input type="password" placeholder="Password" reqired />
-    <input type="password" placeholder="Verify Password" reqired />
-    <div class="date">
-  <label for="birthday" >Gender:</label>
+    <input class="username" type="text" placeholder="User name"  autocomplete='off'/>
+    <input class="email" type="text" placeholder="Email Adress" autocomplete='off' />
+    <input class="pw" type="password" placeholder="Password"  />
+    <input class="pw2" type="password" placeholder="Verify Password"  />
+    <div class="gender">
+  <label for="select" >Gender:</label>
   <select name="Gender"  required>
     <option value="" disabled selectd>Gender</option>
     <option >Female</option>
@@ -35,7 +35,8 @@
     <option >Other</option>
   </select>
     </div>
-    <button class="form-btn dx" type="submit"><a href="homepage.html">Sign Up</a></button>
+    <button class="form-btn dx" type="submit" onclick="return formCheck()">Sign Up</a></button>
+
   </form>
 
 </div>
