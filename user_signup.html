@@ -20,11 +20,21 @@
                                
       
       
-  <form class="signUp">
+  <form class="signUp" >
     <h3>Create Your Account</h3>
-    <input class="w100" type="email" placeholder="Email Adress" reqired autocomplete='off' />
+    <input class="username" type="text" placeholder="User name" reqired autocomplete='off' onblur="validateForm(this.className)" />
+    <input class="w100" type="email" placeholder="Email Adress" reqired autocomplete='off' onblur="validateForm(this.className)" />
     <input type="password" placeholder="Password" reqired />
     <input type="password" placeholder="Verify Password" reqired />
+    <div class="date">
+  <label for="birthday" >Gender:</label>
+  <select name="Gender"  required>
+    <option value="" disabled selectd>Gender</option>
+    <option >Female</option>
+    <option >Male</option>
+    <option >Other</option>
+  </select>
+    </div>
     <button class="form-btn dx" type="submit"><a href="homepage.html">Sign Up</a></button>
   </form>
 
@@ -32,7 +42,7 @@
 </div>
 <!-- 
 <script type="text/javascript" href="create.js"></script> -->
-
+<script src="create.js"></script>
 </body>
 
 </html>
