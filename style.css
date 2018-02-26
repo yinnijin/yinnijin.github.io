@@ -40,7 +40,7 @@ h1{
   display: inline-block;
   margin-left: 10px;
   margin-top: 6px;
-  border: 2.5px solid rgb(255,255,255);
+  border: 1px solid rgb(255,255,255);
   border-radius: 5px;
   float: left;
   text-align: center;
@@ -95,7 +95,6 @@ button.fb {
   background: #3b5998;
   width: 160px;
   height: 25px;
-  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #fff;
   text-transform: uppercase;
@@ -125,7 +124,7 @@ button.form-btn {
 
 button.form-btn.sx {
   left: 0;
-  border-radius: 0 0 0 5px;
+  border-radius: 5px;
   background-color: rgba(255, 125, 0, 0.35);
   color: #fff;
   transition:all 0.3s linear;

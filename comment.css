@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+  background-image: url("iphoneOL.jpg");
+  background-repeat: no-repeat;
+  
+}
+
+
+#screen {
+  height: 530px;
+  width: 300px;
+  margin: 105px 23px;
+}
+
+.head-bar {
+  width: 300px;
+  height: 45px;
+  text-align: center;
+  background-color: #ff6666;
+  color: #ffffff;
+  text-shadow: 2px 2px #111111;
+  font-family: Avenir, sans-serif;
+  
+}
+
+.header{
+  font-size: 16pt;
+  padding-left: 100px;
+  padding-top: 10px;
+  color: white;
+  text-shadow: 1px 1px black;
+  
+}
+
+.back-button {
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -60px;
+  border: 1px solid rgb(255,255,255);
+  border-radius: 5px;
+  float: left;
+  text-align: center;
+  text-shadow:none;
+  padding-top: 2px;
+  border-color: orange;
+
+}
+
+.back-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #ccc;
+}
+
+.tip-left {
+  top: 10px;
+  left: -24px;
+  border-right-color: rgba(255, 125, 0, 0.35);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+
+.dialogbox .body {
+  position: relative;
+  max-width: 200px;
+  height: auto;
+  margin: 20px 10px 0px 70px;
+  padding: 5px;
+  background-color: rgb(255,250,240);
+  border-radius: 3px;
+  border: 4px solid rgba(255, 125, 0, 0.35);
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: 'Dosis';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #797979;
+}
+
+.dialogbox img {
+    float: left;
+    max-width: 40px;
+    width: 50%;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.sendTerm {
+  float: left;
+  width: 250px;
+  border: 3px solid #ff6666;
+  padding: 5px;
+  height: 36px;
+  outline: none;
+  color: #9DBFAF;
+  
+  position: fixed;
+  top: 600px;
+}
+
+.sendButton {
+  width: 50px;
+  height: 36px;
+  border: 1px solid #ff6666;
+  background: #ff6666;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 250px;
+ position: fixed;
+  top: 600px;
+}
+
+#newpost{
+  display: none;
+}
+
+.time{
+  margin: 0;
+  font-size: 10px;
+  font-family: Avenir, sans-serif;
+  text-align: right;
+}

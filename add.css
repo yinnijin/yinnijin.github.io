@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
 
 body {
   background-image: url("iphoneOL.jpg");
@@ -36,7 +37,7 @@ body {
   display: inline-block;
   margin-left: 10px;
   margin-top: -60px;
-  border: 2.5px solid rgb(255,255,255);
+  border: 1px solid rgb(255,255,255);
   border-radius: 5px;
   float: left;
   text-align: center;
@@ -55,7 +56,7 @@ body {
   margin:20px 0px 0px 10px;
   width:40%;
   padding:10px 20px 30px;
-  font-family: arial;
+  font-family: 'Dosis';
   font-weight:700;
 }
 
@@ -81,7 +82,7 @@ input {
   width:150px;
   display:block;
   font-size:16px;
-  font-family: Avenir, sans-serif;
+  font-family: 'Dosis';
   color:black;
 }
 
@@ -155,17 +156,18 @@ button::after {
 button {
   width:50px;
   height: 30px;
-  background: none;
-  border: 3px solid #ff6666;
+  background: #ff6666;
+  border: 1px solid #ff6666;
   border-radius: 5px;
-  color: #ff6666;
+  color: white;
   display: block;
   font-size: 12pt;
   font-weight: bold;
-  margin: 40px 0px 0px 70px;
+  margin: 40px 0px 0px 100px;
   padding: 1px 0px 0px 0px;
   position: relative;
   text-transform: uppercase;
+  font-family: 'Dosis';
 }
 
 button::before,
@@ -209,5 +211,5 @@ input::-webkit-clear-button {
 
 #button1 a{
   text-decoration: none;
-  color: #ff6666;
+  color: white;
 }

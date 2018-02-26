@@ -1,0 +1,268 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+  background-image: url("images/iphoneOL.jpg");
+  background-repeat: no-repeat;
+  font-family: Avenir, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: bolder;
+}
+
+#screen {
+  height: 530px;
+  width: 300px;
+  margin: 105px 23px;
+
+}
+
+.head-bar {
+  width: 300px;
+  height: 45px;
+  text-align: center;
+  background-color: #ff6666;
+  color: #ffffff;
+  text-shadow: 2px 2px #111111;
+  
+}
+
+.back-button {
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -60px;
+  border: 1px solid rgb(255,255,255);
+  border-radius: 5px;
+  float: left;
+  text-align: center;
+  text-shadow:none;
+  padding-top: 2px;
+  border-color: orange;
+
+}
+
+.back-button a{
+  text-decoration: none;
+  color: white;
+}
+
+/*.search {
+  width: 200px;
+  position: relative;
+  margin-top: 30px;
+}*/
+
+.searchTerm {
+  float: left;
+  width: 80%;
+  border: 3px solid #ff6666;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+.searchTerm:focus{
+  color: #ff6666;
+}
+
+.searchButton {
+  float: left;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ff6666;
+  background: #ff6666;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: -40px;
+  margin-right: 5px;
+  margin-top: 5px;
+  display: inline;
+}
+.bg{
+  display: block;
+  width: 300px;
+  height: 485px;
+
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  border-bottom: 3px solid #ff6666;
+
+/*  transform: translate(-50%, -50%);*/
+}
+
+.postButton {
+  float: left;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ff6666;
+  background: #ff6666;
+  text-align: center;
+  color: #ff6666;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+  display: inline;
+}
+
+.postButton_bg {
+  float: left;
+  width: 40px;
+  height: 36px;
+  background: #ffffff;
+  text-align: center;
+  color: #ff6666;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 5px;
+  display: inline;
+}
+
+.left{
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.right{
+  float:right;
+  margin-right: 10px;
+  margin-top: 20px;
+  border:1px, solid, black;
+  display: inline-block;
+}
+
+
+
+/* 
+  Albums 
+      */
+
+
+.albums-album-wrapper {
+  width: 133px;
+  height: 142px;
+  display: block;
+
+
+
+}
+
+.albums-album-art {
+  width: 130px;
+
+}
+
+.albums-album-name {
+
+  width: 132px;
+  height: 24px;
+  text-align: left;
+  font-size: 85%;
+  font-weight: bolder;
+  font-family: Dosis;
+  margin-left: 2px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+  padding: 0px;
+  display: inline-block;
+  color: black;
+
+
+}
+
+
+.albums-artist-name {
+  text-align: center;
+  font-size: 25%;
+  font-style: italic;
+
+}
+
+
+/*
+  Layout for li element within the list
+                      */
+
+
+.caption{
+  width: 132px;
+  height: 35px;
+  display: inline-block;
+  float: left;
+}
+
+
+.article{
+  width: 135px;
+  height: 180px;
+  background-color: rgba(255,255,255,0.35);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}
+
+.scroll{
+  width: 100%;
+  height: 430px;
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar { 
+    display: none; 
+}
+
+button{
+  padding: 0px;
+}
+
+.pictures{
+  width: 132px;
+  height: 143px;
+  display: block;
+  float: left;
+}
+
+.post_time{
+  float: right;
+  width: auto;
+  height: 9px;
+  font-family: Dosis;
+  font-size: 60%;
+  margin:0px;
+  margin-top: 2px;
+  margin-right: 4px;
+  display: inline-block;
+
+}
+.author{
+  float: left;
+  width: auto;
+  height: 9px;
+  font-weight: bold;
+  font-family: Dosis;
+  font-size: 60%;
+  margin:0px;
+  margin-top: 2px;
+  margin-left: 2px;
+  display: inline-block;
+  color: black;
+}

@@ -1,0 +1,121 @@
+/* 
+	Global classes 
+					*/
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Dosis, sans-serif;
+}
+
+h2{
+	font-family: Avenir, sans-serif;
+	font-weight: bolder;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: bolder;
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	
+}
+
+.head-bar {
+	width: 300px;
+	height: 45px;
+	text-align: center;
+	background-color: #ff6666;
+	color: #ffffff;
+	text-shadow: 2px 2px #111111;
+	font-family: sans-serif;
+}
+
+
+.back-button {
+	width: 50px;
+	height: 28px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: -53px;
+	border: 1px solid rgb(255,255,255);
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	text-shadow:none;
+	padding-top: 2px;
+	border-color: orange;
+
+}
+
+
+div .article{
+	overflow: auto;
+	height: 390px;
+	padding: 10px;
+    line-height: 2;
+}
+
+.content{
+	border: 2px solid rgb(230, 230, 230);
+	padding: 10px;
+	margin: 1px auto 10px auto;
+	border-radius: 5px;
+}
+
+.photo{
+    width: 40px;
+    height: 40px;
+	border-radius:30px;
+
+}
+
+.username{
+	font-family: Dosis;
+	color: black;
+	vertical-align: top;
+    text-decoration: none!important;
+    background-image: none!important;
+    margin-left: 8px;
+}
+
+.user{
+/*	border: 2px solid rgb(230, 230, 230);*/
+	padding: 8px;
+/*	border-radius: 5px;*/
+}
+
+/*.comment .share {
+	width: 100%;
+}*/
+
+
+.comment {
+	position: relative;
+	background: rgba(255, 125, 0, 0.35);
+	
+	width: 134px;
+	height: 50px;
+	margin: 15px 0 5px 12px; 
+}
+
+.share {
+	position: relative;
+	background: #ff6666;
+	width: 134px;
+	height: 50px;
+	margin: 15px 3px 5px 0; 
+}
+
+#date{
+	
+	color: rgb(230, 230, 230);
+	white-space: pre-wrap;
+	font-style: italic;
+}

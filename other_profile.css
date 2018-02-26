@@ -1,0 +1,264 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+  background-image: url("iphoneOL.jpg");
+  background-repeat: no-repeat;
+  /*font-family: Avenir, sans-serif;*/
+ /* font-family: 'Poiret One';*/
+}
+
+
+#screen {
+  height: 530px;
+  width: 300px;
+  margin: 105px 23px;
+}
+
+.head-bar {
+  width: 300px;
+  height: 45px;
+  text-align: center;
+  background-color: #ff6666;
+  color: #ffffff;
+  text-shadow: 2px 2px #111111;
+  
+}
+
+.header{
+  font-size: 16pt;
+  padding-left: 100px;
+  padding-top: 10px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.back-button {
+  /*position: absolute;*/
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  float: left;
+  /*left:0;*/
+  text-align: center;
+  text-shadow:none;
+  padding-top: 2px;
+  border-color: orange;
+
+}
+
+.back-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px #111111;
+}
+
+/*body {
+  background: #383838;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, .65);
+}
+
+a:hover {
+  color: rgba(0, 0, 0, .45);
+}
+
+.window,
+.box,
+ul,
+li {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+ul {
+ /* font-family: 'Fjalla One', sans-serif;*/
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 40px;
+  color: rgba(0,0,0,0.75);
+  display: block;
+  font-size: 1em;
+  font-weight: bolder;
+  height: 44px;
+  letter-spacing: 5px;
+  line-height: 42px;
+  margin: 10px auto;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  vertical-align: middle;
+  width: 60%;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.overlay {
+  background: #158 url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDm_aLG9gpOGCOd-svi0UX36LLw4hN7T7OfZiXnG1ZxCY9W_W) center no-repeat;
+  background-size: cover;
+  height: calc(100% + 40px);
+  margin: -20px;
+  position: relative;
+  width: calc(100% + 40px);
+  /*-webkit-filter: blur(10px);
+  -moz-filter: blur(10px);*/
+  filter: blur(10px);
+}
+
+.window {
+  box-shadow: 0 0 100px  rgba(0,0,0,0.25);
+  height: 530px;
+  width: 300px;
+}
+
+.header {
+  color: #FFF;
+  height: 340px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: inherit;
+  font-family: 'Dosis';
+}
+
+.header:before {
+  border: 2px solid rgba(161, 220, 255, 0.34);
+  border-radius: 100%;
+  content: "";
+  height: 130px;
+  left: 0;
+  margin: 82px auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 130px;
+  z-index: 2;
+  -webkit-transform: scale(1.24, 1.24);
+  -moz-transform: scale(1.24, 1.24);
+  transform: scale(1.24, 1.24);
+}
+
+.header img {
+  border: 5px solid rgba(255, 125, 0, 0.35);
+  border-radius: 100%;
+  height: 140px;
+  margin: 75px 75px 10px 75px;
+  object-fit: cover;
+  width: 140px;
+}
+
+.header h2 {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin: 0 auto;
+  padding: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+
+.header h4 {
+  color: rgba(255, 255, 255, 0.75);
+  display: block;
+  font-size: 15px;
+  margin: 10px auto;
+  padding: 5px 0 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  
+}
+
+.footer {
+ 
+  bottom: 0;
+  color: #FFF;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 330px;
+  width: inherit;
+  font-family: 'Dosis';
+}
+
+.footer ul {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  padding: 20px 20px;
+}
+
+.footer li:first-child {
+  border: 0;
+}
+
+.footer li {
+  border-left: 2px solid rgba(255, 255, 255, .15);
+  padding: 0 4px 0 4px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.footer a span {
+  
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 4px 0 4px;
+  vertical-align: middle;
+  
+}
+
+.number{
+  margin-right: 10px;
+  margin-left: 20px;
+  font-family: 'Dosis';
+}
+
+#icon{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
