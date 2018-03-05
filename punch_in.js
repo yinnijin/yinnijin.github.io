@@ -1,4 +1,16 @@
-  function readURL(input) {
+var current_id = 0;
+
+function change_color(event){
+
+   current_id = event.target.id;
+   id = String(current_id);
+   document.getElementById(id).style.backgroundColor = "#ff6666";
+
+}
+
+
+
+function readURL(input) {
     if (input.files && input.files[0]) {
 
       var reader = new FileReader();
@@ -21,10 +33,38 @@
     $('.image-upload-wrap').hide();
   }
 
+function postCheck()
+  { 
+    alert(current_id);
+    var content = document.getElementById("text").value;
+    if (content.length < 1) {
+      alert("Has No Content");
 
-    function postCheck()
-    {
-    var url = "Schedule.html";
-    window.location(url);
-    
+      return false;
     }
+    else{
+      alert(current_id);
+      document.getElementById('current_id').style.backgroundcolor = "#ff6666" ;
+      window.location.href = "Schedule2.html";
+      return false;
+
+        }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

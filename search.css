@@ -18,15 +18,15 @@ a {
   margin: 105px 23px;
 
 }
-
 .head-bar {
   width: 300px;
   height: 45px;
-  text-align: center;
-  background-color: #ff6666;
-  color: #ffffff;
-  text-shadow: 2px 2px #111111;
-  
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+ text-align: center;
+  font-family: Avenir, sans-serif;
 }
 
 .back-button {
@@ -35,16 +35,11 @@ a {
   display: inline-block;
   margin-left: 10px;
   margin-top: -60px;
-  border: 1px solid rgb(255,255,255);
-  border-radius: 5px;
   float: left;
   text-align: center;
   text-shadow:none;
   padding-top: 2px;
-  border-color: orange;
-
 }
-
 .back-button a{
   text-decoration: none;
   color: white;
@@ -56,29 +51,34 @@ a {
   margin-top: 30px;
 }
 
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #ff6666;
-  padding: 5px;
-  height: 36px;
-  outline: none;
-  color: #9DBFAF;
-}
 
 .searchTerm:focus{
-  color: #ff6666;
+  color: rgb(182, 113, 154);
 }
 
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #ff6666;
-  background: #ff6666;
+  border: 1px solid rgb(182, 113, 154);
+  background: rgb(152, 114, 151);
   text-align: center;
   color: #fff;
   cursor: pointer;
   font-size: 20px;
+border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.searchTerm {
+  float: left;
+  width: 200px;
+  border: 2px solid rgb(182, 113, 154);
+  padding: 5px;
+  height: 36px;
+  outline: none;
+  color: #9DBFAF;
+ 
+   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 /*Resize the wrap to see the search bar change!*/
@@ -122,7 +122,7 @@ p{
   font-family: Dosis;
 }
 .more{
-  color: #ff6666;
+  color: rgb(182, 113, 154);
   font-weight: bold;
   text-decoration: underline;
 }

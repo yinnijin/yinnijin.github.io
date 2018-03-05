@@ -22,11 +22,12 @@ a {
 .head-bar {
   width: 300px;
   height: 45px;
-  text-align: center;
-  background-color: #ff6666;
-  color: #ffffff;
-  text-shadow: 2px 2px #111111;
-  
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+ text-align: center;
+  font-family: Avenir, sans-serif;
 }
 
 .back-button {
@@ -35,15 +36,16 @@ a {
   display: inline-block;
   margin-left: 10px;
   margin-top: -60px;
-  border: 1px solid rgb(255,255,255);
-  border-radius: 5px;
   float: left;
   text-align: center;
   text-shadow:none;
   padding-top: 2px;
-  border-color: orange;
-
 }
+.back-button a{
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
@@ -78,7 +80,7 @@ a {
 	height: 22px;
 	display: inline-block;
 	float: left;
-	background-color: #ff6666;
+	background-color: rgb(182, 113, 154);
 	margin-left: 12px;
 	margin-top: 15px;
 }
@@ -187,9 +189,10 @@ button{
 	text-align: center;
 	border: 1px solid #fff;
 	border-radius: 20px;
-	background-color: rgb(220,220,220);
-	background-color: #ff6666;
+	background-color: rgb(210,210,210);
+	box-shadow: 0px 0px 1.5px 0px #888888;
 }
+
 
 .checkmark{
 	display: inline-block;
@@ -225,10 +228,8 @@ button{
 	float: left;
 	margin-left: 1px;
 	position: absolute;
-	background-color: #ff6666/*rgb(255,255,255)*/;
+	background-color: rgb(182, 113, 154);
 	box-shadow: 0px -0.5px 1px 0px #888888;
-
-
 
 }
 
@@ -243,7 +244,5 @@ button{
 	border:none;
 
 }
-
-
 
 
