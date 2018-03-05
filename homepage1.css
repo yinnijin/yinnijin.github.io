@@ -14,11 +14,21 @@ body {
   margin: 105px 23px;
 }
 
+.head-bar {
+  width: 300px;
+  height: 45px;
+  text-align: center;
+/*  background-color: #ff6666;*/
+  color: #ffffff;
+  text-shadow: 2px 2px #111111;
+  margin-top: 0;
+  
+}
 
-h1{
-  font-size: 60pt;
-font-family: Eczar;
-/*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+.gymo{
+  margin-left: 60px;
+
+
 }
 
 
@@ -29,14 +39,15 @@ font-family: Eczar;
   display: inline-block;
   margin-left: 10px;
   margin-top: 5px;
-  border: 1px solid;
-  border-radius: 5px;
+  margin-right: 60px;
+/*  border: 1px solid;
+  border-radius: 5px;*/
   float: left;
   /*left:0;*/
   text-align: center;
   text-shadow:none;
   padding-top: 2px;
-  border-color: orange;
+/*  border-color: orange;*/
 
 }
 
@@ -49,6 +60,14 @@ font-family: Eczar;
   margin-top: 0px;
   margin-bottom: 0px;
   text-shadow: 2px 2px #111111;
+}
+
+.head-gymo{
+  margin-top: -20px;
+  font-family:  Avenir, sans-serif;
+  text-align: left;
+   color: white;
+  text-shadow: 1px 1px black;
 }
 
 /*body {
@@ -65,6 +84,13 @@ a {
   
 }
 
+a:hover {
+  color: rgba(0, 0, 0, .65);
+}
+
+a:hover {
+  color: rgba(0, 0, 0, .45);
+}
 
 .window,
 .box,
@@ -116,7 +142,8 @@ img {
   height: 530px;
   left: 0;
   position: absolute;
-  text-align: center;
+/*  text-align: center;*/
+/*  margin-left: */
   top: 0;
   width: inherit;
   
@@ -144,7 +171,7 @@ color: white;
 font-family: 'Dosis';
 
 /*background-color: rgb(250,212,183);*/
-background-color: rgb(250 ,212, 183);
+background-color: #11111161;
 /*border-style: dotted;*/
 border-width: 2px;
 
@@ -154,41 +181,64 @@ border-width: 2px;
   margin-top: 110px;
 }
 
-button.form-btn {
+.bg{
+  display: block;
+  width: 300px;
+  height: 485px;
+  /*background-color: rgb(250,212,183);*/
+}
 
-  width:70%; 
-height:2em; 
-  bottom: 0;
-  border: 0;
-  font-family: 'Dosis';
-  font-size: 24px;
-  text-transform: uppercase;
-  cursor: pointer;
+.albums-album-wrapper {
+  top: -500px;
+  width: 135px;
+  height: 135px;
+  margin: 0px;
   display: inline-block;
 }
 
-button.form-btn.sx {
-  left: 0;
-  border-radius: 5px;
-  background-color: #11111161;
-  color: #fff;
-  transition:all 0.3s linear;
+.albums-album-art {
+  width: 130px;
+
+}
+
+.albums-album-name {
+
+  top: -500px;
+  text-align: center;
+  font-size: 120%;
+  font-family: 'Dosis';
+  font-size: solid black;
+  font-weight: bold;
+  color:white;
+}  
+.left{
+  float: left;
+  margin-left: 10px;
+  margin-top: 40px;
+    background-color: #a79c9c2e;
+}
+
+.right{
+  float:right;
+  margin-right: 10px;
+  margin-top: 40px;
+  background-color: #a79c9c2e;
+  
+}
+
+.left1{
+  float: left;
+  margin-left: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+    background-color: #a79c9c2e;
 }
 
-button.form-btn.sx:hover {
-  background-color:black;
-  color: #fff;
-}
-
-button.form-btn.sx.back {
-  background-color: #ff6666;
-  transition:all 0.3s linear;
-}
-
-button.form-btn.sx.back:hover {
-  background-color: rgba(0, 0, 0, 0.35);
+.right1{
+  float:right;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #a79c9c2e;
+  
 }
 
 

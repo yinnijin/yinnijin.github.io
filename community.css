@@ -1,9 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+@import 'https://fonts.googleapis.com/css?family=Eczar|Roboto:300,400';
 
 body {
   background-image: url("images/iphoneOL.jpg");
   background-repeat: no-repeat;
-  font-family: Avenir, sans-serif;
+  font-family: Dosis, sans-serif;
+  
 }
 
 a {
@@ -22,11 +24,17 @@ a {
 .head-bar {
   width: 300px;
   height: 45px;
-  text-align: center;
-  background-color: #ff6666;
-  color: #ffffff;
-  text-shadow: 2px 2px #111111;
-  
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: Avenir, sans-serif;
+/*  margin-left: 8px; */
+
+}
+
+h1{
+  margin-left: 70px;
 }
 
 .back-button {
@@ -35,13 +43,13 @@ a {
   display: inline-block;
   margin-left: 10px;
   margin-top: -60px;
-  border: 1px solid rgb(255,255,255);
+/*  border: 1px solid rgb(255,255,255);*/
   border-radius: 5px;
   float: left;
   text-align: center;
   text-shadow:none;
   padding-top: 2px;
-  border-color: orange;
+/*  border-color: orange;*/
 
 }
 
@@ -59,7 +67,7 @@ a {
 .searchTerm {
   float: left;
   width: 80%;
-  border: 3px solid #ff6666;
+  border: 2px solid rgb(182, 113, 154);
   padding: 5px;
   height: 36px;
   border-radius: 5px;
@@ -70,15 +78,15 @@ a {
 }
 
 .searchTerm:focus{
-  color: #ff6666;
+  color: rgb(158, 118, 152);
 }
 
 .searchButton {
   float: left;
   width: 40px;
   height: 36px;
-  border: 1px solid #ff6666;
-  background: #ff6666;
+  border: 1px solid rgb(182, 113, 154);
+  background: rgb(158, 118, 152);
   text-align: center;
   color: #fff;
   border-radius: 5px;
@@ -101,7 +109,8 @@ a {
   display: inline-block;
   width: 300px;
   height: 50px;
-  border-bottom: 3px solid #ff6666;
+  border-bottom: 3px solid rgb(182, 113, 154);
+
 
 /*  transform: translate(-50%, -50%);*/
 }
@@ -110,10 +119,10 @@ a {
   float: left;
   width: 40px;
   height: 36px;
-  border: 1px solid #ff6666;
-  background: #ff6666;
+  border: 1px solid rgb(182, 113, 154);
+  background: rgb(152, 114, 151);
   text-align: center;
-  color: #ff6666;
+/*  color: #ff6666;*/
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
@@ -177,7 +186,7 @@ a {
   height: 24px;
   text-align: left;
   font-size: 85%;
-  font-weight: bolder;
+  font-weight: 900;
   font-family: Dosis;
   margin-left: 2px;
   margin-top: 1px;
@@ -224,6 +233,7 @@ a {
   width: 100%;
   height: 430px;
   overflow-y: scroll;
+
 }
 
 .scroll::-webkit-scrollbar { 
@@ -248,7 +258,7 @@ button{
   font-family: Dosis;
   font-size: 60%;
   margin:0px;
-  margin-top: 2px;
+/*  margin-top: 2px;*/
   margin-right: 4px;
   display: inline-block;
 
@@ -257,12 +267,11 @@ button{
   float: left;
   width: auto;
   height: 9px;
-  font-weight: bold;
   font-family: Dosis;
   font-size: 60%;
   margin:0px;
-  margin-top: 2px;
   margin-left: 2px;
   display: inline-block;
   color: black;
+
 }

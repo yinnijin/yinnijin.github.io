@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Post Avtivity</title>
-        <link rel="stylesheet" type="text/css" href="post.css"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+<head>
+  <title>Punch in</title>
+  <link rel="stylesheet" type="text/css" href="post.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    </head>
-    <body>
-   <div id="screen">
+</head>
+<body>
+
+<div id="screen">
       <div class="head-bar">
          <h1>Post</h1>
             <div class="back-button">
@@ -17,21 +21,29 @@
       </div>
 
     <form>
-      <div><textarea id="text1"  rows="1" cols="30"  placeholder="Your title" required></textarea></div>
-     <div><textarea id="text"  rows="10" cols="30"  placeholder="Post your activity in text..." required></textarea></div>
+  <input type="text" name="text" placeholder="Title">    
+  <div><textarea id="text"  rows="5" cols="30"  placeholder="Avtivity" required></textarea></div>
+
+  <div class="file-upload">
+    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <div class="image-upload-wrap" style="display:none">
+      <div class="image-title-wrap"><!-- <span class="image-title">Uploaded Image</span> --><button type="button" onclick="removeUpload()" class="remove-image">X</button></div>
+      <img class="file-upload-image" src="#" alt="your image"/>
+    </div>
+  </div>
     
-      <div class="photo">
-<!--        <input id="img_input2" type="file" accept="image/*"/> -->
-        <label for="img_input2" id="img_label2">
-         <i class="material-icons camera"><a href="add_photo.html">camera_alt</a></i> 
-        </label>
-      </div>
-        <button type="button" class="submit"><a href="community.html">Post</a></button>
-<!--         <input type="submit" value="Post" class="submit"><a href="../search.html">Post</a> -->
+
+ <button type="submit" value="Post" class="submit" onclick='postCheck()'>Post</button>
+       <!--  <button type="submit" value="Post" class="submit" onclick="return postCheck()"><a href="community.html">Post</a></button> -->
     
     </form>
 
       </div>
-<!--       <script type="text/javascript" src="post.js"></script>  -->                           
-   </body>
+
+
+
+<script src="punch_in.js"></script>
+
+</body>
 </html>

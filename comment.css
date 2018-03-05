@@ -14,15 +14,16 @@ body {
   position: relative;
 }
 
+
 .head-bar {
   width: 300px;
   height: 45px;
-  text-align: center;
-  background-color: #ff6666;
-  color: #ffffff;
-  text-shadow: 2px 2px #111111;
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+ text-align: center;
   font-family: Avenir, sans-serif;
-  
 }
 
 .header{
@@ -34,22 +35,18 @@ body {
   
 }
 
+
 .back-button {
   width: 50px;
   height: 28px;
   display: inline-block;
   margin-left: 10px;
   margin-top: -60px;
-  border: 1px solid rgb(255,255,255);
-  border-radius: 5px;
   float: left;
   text-align: center;
   text-shadow:none;
   padding-top: 2px;
-  border-color: orange;
-
 }
-
 .back-button a{
   text-decoration: none;
   color: white;
@@ -66,7 +63,7 @@ body {
 .tip-left {
   top: 10px;
   left: -24px;
-  border-right-color: rgba(255, 125, 0, 0.35);
+  border-right-color: #888;
   border-top-color: transparent;
   border-left-color: transparent;
   border-bottom-color: transparent;  
@@ -79,9 +76,9 @@ body {
   height: auto;
   margin: 20px 10px 0px 70px;
   padding: 5px;
-  background-color: rgb(255,250,240);
+  background-color: #1111110d;
   border-radius: 3px;
-  border: 4px solid rgba(255, 125, 0, 0.35);
+  border: 4px solid #888;
 }
 
 .body .message {
@@ -105,7 +102,7 @@ body {
 .sendTerm {
   float: left;
   width: 250px;
-  border: 3px solid #ff6666;
+  border: 3px solid rgb(182, 113, 154);
   padding: 5px;
   height: 36px;
   outline: none;
@@ -118,8 +115,8 @@ body {
 .sendButton {
   width: 50px;
   height: 36px;
-  border: 1px solid #ff6666;
-  background: #ff6666;
+  border: 1px solid rgb(182, 113, 154);
+  background: rgb(152, 114, 151);
   text-align: center;
   color: #fff;
   cursor: pointer;

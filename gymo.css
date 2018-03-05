@@ -100,12 +100,6 @@ a {
 	color:white;
 }
 
-.albums-artist-name {
-	text-align: center;
-	font-size: 25%;
-	font-style: italic;
-
-}
 
 /*
 	Back button layout
@@ -130,53 +124,6 @@ a {
 /* 
 	Songs 
 			*/
-.songs-info-wrapper {
-	width: 150px;
-	height: 150px;
-	margin-left: -55px;
-	margin-top: 10px;
-	display: inline-block;
-	float: left;
-}
-
-.songs-album-art {
-	display: block;
-	width: 110px;
-	margin-left: 18px;
-	float: left;
-	text-align: center;
-	
-}
-
-.songs-album-name {
-	font-family: 'Dosis';
-	font-size: 150%;
-	margin-top: 20px;
-	font-weight: bold;
-
-}
-
-.songs-artist-name {
-	margin-top: -15px;
-	font-size: 120%;
-	font-style: italic;
-	font-weight: 600;
-}
-
-.songs-album-year {
-	vertical-align: top;
-	font-size: 120%;
-	font-weight: 400;
-}
-
-.songs-list {
-	margin-top: 180px;
-	height: 260px;
-	width: 240px;
-	padding-left: 35px;
-	text-decoration: none;
-
-}
 
 /*
 	Layout for li element within the list
@@ -233,7 +180,7 @@ ol li{
 /*for chart*/
 
 
-li{
+/*li{
   font: 15px sans-serif;
 }
     .axis path,
@@ -285,7 +232,7 @@ li{
     }
 
  
-
+*/
 
 
 

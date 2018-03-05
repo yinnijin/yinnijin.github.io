@@ -2,7 +2,7 @@
 <html lang="en" >  
 <head>
         <title>Create Account</title>
-        <link rel="stylesheet" type="text/css" href="create.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </header>
@@ -12,30 +12,30 @@
       <div class="head-bar">
       	<div class="back-button">
                <i class="material-icons">
-               <a href="index.html">arrow_back</a>
+               <a href="index.html">keyboard_arrow_left</a>
                </i>
             </div>
-              <h1>Sign Up</h1>
+              <h1></h1>
       </div> 
                                
       
       
   <form class="signUp" >
-    <h3>Create Your Account</h3>
+    <h3 class="account">Create Account</h3>
     <input class="username" type="text" placeholder="User name"  autocomplete='off'/>
     <input class="email" type="text" placeholder="Email Adress" autocomplete='off' />
     <input class="pw" type="password" placeholder="Password"  />
     <input class="pw2" type="password" placeholder="Verify Password"  />
     <div class="gender">
   <label for="select" >Gender:</label>
-  <select name="Gender"  required>
+  <select name="Gender" class="custom-select" required>
     <option value="" disabled selectd>Gender</option>
     <option >Female</option>
     <option >Male</option>
     <option >Other</option>
   </select>
     </div>
-    <button class="form-btn dx" type="submit" onclick="return formCheck()">Sign Up</a></button>
+    <button class="form-btn sx log-in" type="submit" onclick="return formCheck()">Sign Up</a></button>
 
   </form>
 

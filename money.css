@@ -1,0 +1,278 @@
+/* 
+	Global classes 
+					*/
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: bolder;
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+
+}
+
+.head-bar {
+  width: 300px;
+  height: 45px;
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+ text-align: center;
+  font-family: Avenir, sans-serif;
+}
+
+
+.bg{
+	display: block;
+	width: 300px;
+	height: 485px;
+	background-color: white;
+}
+
+
+
+.back-button {
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -60px;
+  float: left;
+  text-align: center;
+  text-shadow:none;
+  padding-top: 2px;
+}
+.back-button a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+h6 {
+  font-family: 'Dosis';
+  font-size: 35px;
+
+  color: black;
+  margin: 0px auto 0px 30px;
+  padding-top: 20px;
+}
+
+
+.add-new-data {
+	display: block;
+	margin-top: 60px;
+	margin-left: 75px;
+	text-align: center;
+	font-size: 120%;
+	width: 200px;
+	height: 50px;
+	background-color: #ff6666;
+	border-radius: 5px;
+	font-family: 'Dosis';
+
+	width: 150px;
+    height: 60px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#add-new{
+	font-weight: bold;
+	font-size: 110%;
+	margin-top: 10px;
+	height: 50px;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+
+.unit{
+  margin-left: 50px;
+  /*padding-top:65px;*/
+  color:rgb(182, 113, 154);
+  display: inline-block;
+}
+
+.unit2{
+  margin-left: 20px;
+  /*padding-top:65px;*/
+  color:rgb(182, 113, 154);
+  display: inline-block;
+}
+
+.amount{
+	border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+	width: 300px;
+	height: 80px;
+}
+
+  .custom-select {
+    position: relative;
+    display: inline-block; 
+    margin-left: 5px;
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+    color: #888;
+    background-color: white;
+  }
+
+.des{
+	color: grey;
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.left{
+	float: left;
+	background-color: white;
+	display: inline-block;
+	height: 35px;
+	width: 260px;
+	border:1px solid white;
+	cursor: pointer;
+	text-decoration: underline;
+	margin-left: 15px;
+}
+
+#graph-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+
+.name {
+
+	height:35px;
+	font-size: 120%;
+	font-family: 'Dosis';
+	font-size: solid black;
+	font-weight: bold;
+	text-align: left;
+}
+
+.add-new-data {
+	display: block;
+	margin-top: 60px;
+	margin-left: 45px;
+	text-align: center;
+	font-size: 120%;
+	width: 200px;
+	height: 50px;
+	border: 1px orange solid;
+	background-color: #ff6666;
+	border-radius: 5px;
+	font-family: 'Dosis';
+}
+
+#add-new{
+	font-weight: bold;
+	font-size: 110%;
+	margin-top: 10px;
+	height: 50px;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+ .help{
+ 	margin-top: 30px;
+ 	height: 160px;
+ 	margin-left: 18px;
+ 	margin-bottom: 0px;
+ 	width: 260px;
+ }
+
+
+#overlay {
+    position: fixed;
+    display: none;
+ 	
+    top: 105;
+    left: 31;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+	width: 300px;
+	height: 530px;
+}
+#text{
+	background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+button.form-btn {
+
+  width:70%; 
+height: 60px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+
+  margin-left: 45px;
+}
+
+button.form-btn.sx {
+  left: 0;
+  border-radius: 5px;
+  background-color: #11111161;
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}

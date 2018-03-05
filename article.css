@@ -27,14 +27,17 @@ a {
 	
 }
 
+
 .head-bar {
-	width: 300px;
-	height: 45px;
-	text-align: center;
-	background-color: #ff6666;
-	color: #ffffff;
-	text-shadow: 2px 2px #111111;
-	font-family: sans-serif;
+  width: 300px;
+  height: 45px;
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+ text-align: center;
+ font-family: Avenir, sans-serif;
+	
 }
 
 
@@ -43,15 +46,11 @@ a {
 	height: 28px;
 	display: inline-block;
 	margin-left: 10px;
-	margin-top: -53px;
-	border: 1px solid rgb(255,255,255);
-	border-radius: 5px;
+	margin-top: -60px;
 	float: left;
 	text-align: center;
 	text-shadow:none;
 	padding-top: 2px;
-	border-color: orange;
-
 }
 
 
@@ -119,3 +118,43 @@ div .article{
 	white-space: pre-wrap;
 	font-style: italic;
 }
+
+button.form-btn {
+
+  width:70%; 
+height: 50px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+
+  margin-left: 45px;
+}
+
+button.form-btn.sx {
+  left: 0;
+  border-radius: 5px;
+  background-color: #11111161;
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+

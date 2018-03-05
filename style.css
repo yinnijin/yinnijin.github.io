@@ -22,7 +22,8 @@ body {
 .head-bar {
   width: 300px;
   height: 45px;
-  background-color: #ff6666;
+  background-image: url("headbar.jpeg");
+
   color: white;
   text-shadow: 1px 1px black;
   margin-left: 8px; 
@@ -40,7 +41,7 @@ h1{
   display: inline-block;
   margin-left: 10px;
   margin-top: 6px;
-  border: 1px solid rgb(255,255,255);
+ /* border: 1px solid rgb(255,255,255);*/
   border-radius: 5px;
   float: left;
   text-align: center;
@@ -80,7 +81,7 @@ h3 {
   font-family: 'Dosis';
   font-size: 35px;
   text-transform: uppercase;
-  color: #87613d;
+  color: black;
   margin-bottom: 30px;
   margin: 45px auto 45px auto;
 }
@@ -125,13 +126,14 @@ button.form-btn {
 button.form-btn.sx {
   left: 0;
   border-radius: 5px;
-  background-color: rgba(255, 125, 0, 0.35);
+  background-color: #888;
   color: #fff;
   transition:all 0.3s linear;
+  margin-top: 10px;
 }
 
 button.form-btn.sx:hover {
-  background-color:rgba(255, 125, 0, 0.65);
+  background-color:black;
   color: #fff;
 }
 
@@ -147,43 +149,43 @@ button.form-btn.sx.back:hover {
 
 input {
   border: none;
-  border-bottom: 1px solid #ffc185;
+  border-bottom: 1px solid #888;
   width: 85%;
   font-family: 'Roboto';
-  color: #ff7d00;
+  color: #888;
   text-align: center;
   font-size: 21px;
   font-weight:100;
-  margin-bottom:45px;
+  margin-bottom:40px;
 }
 
 ::-webkit-input-placeholder {
-   color: #ffc185;
+   color: #888;
   font-family: 'Roboto';
   font-weight:100;
 }
 
 :-moz-placeholder {
-   color: #ffc185;  
+   color: #888;  
   font-family: 'Roboto';
   font-weight:100;
 }
 
 ::-moz-placeholder {
-   color: #ffc185;  
+   color: #888;  
   font-family: 'Roboto';
   font-weight:100;
 }
 
 :-ms-input-placeholder {  
-   color: #ffc185; 
+   color: #888; 
   font-family: 'Roboto';
   font-weight:100;
 }
 
 .signIn input,
 .signUp .w100 {
-  width: 100%;
+  width: 85%;
 }
 
 .signUp {
@@ -193,7 +195,17 @@ input {
   height: 485px;
   margin: 0px 0px 0px 8px; 
 }
-
+.signIn {
+  position: relative;
+  
+  width: 300px;
+  height: 485px;
+  margin: 0px 0px 0px 8px; 
+}
+.account{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 
 .active-sx{
   animation-name: foregrounding-sx;
@@ -245,3 +257,14 @@ input {
   color:white;
   font-size: 23px;
 } 
+
+  .custom-select {
+    position: relative;
+    display: inline-block; 
+    margin-left: 5px;
+   
+    width: 80px;
+    height: 30px;
+    color: #888;
+    background-color: white;
+  }

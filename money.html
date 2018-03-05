@@ -1,0 +1,69 @@
+<html>
+<header>
+   <title>Schedule</title>
+   <link rel="stylesheet" type="text/css" href="money.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+   
+</header>
+
+<body>
+
+      <div id="screen">
+         <div id="overlay" onclick="off()">
+            <div id="text"></div>
+         </div>
+         <div class="head-bar">
+            <h1>Schedule</h1>
+               <div class="back-button">
+                  <i class="material-icons">
+                  <a href="createSchedule.html">keyboard_arrow_left</a>
+                  </i>
+               </div>
+         </div>
+      <div class="bg">
+            
+    <h6>Place your bid amount:</h6>
+<!--     <input class="w100" type="number" placeholder="Bid Amount" reqired />
+ --><div class="amount">
+    <div class="unit">$</div>
+    <select name="sources" id="sources" class="custom-select" placeholder="Source Type" onchange="send()">
+<!--     <option value="" disabled selectd>Gender</option>
+ -->
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+  </select>
+<div class="unit2"> in total</div>
+<p id="new" class="des">You can get back $1.43 per day.</p>
+</div>
+ <div class="help">             
+                    <div class="left" onclick="on1()">
+                      <div class="name" >- Why do I bid money?</div>
+                    </div>
+              <div class="left" onclick="on2()">
+                     <div class="name" >- How can I get money back?</div>
+              </div>
+                            
+              <div class="left" onclick="on3()">
+               <div class="name" >- What if I fail to punch in?</div>
+              </div>
+
+              <div class="left" onclick="on4()">
+                   <div class="name" >- How do I get rewards?</div>
+              </div>
+          </div>
+         <!--  <input id="box1" type="checkbox" />  <label for="box1">I understand the policy</label> -->
+         <button class="form-btn sx log-in" ><a href="schedule2.html">understand, create schedule</a></button>
+      </div>
+      
+   </div>   
+
+
+<script src="money.js"></script>
+</body>
+</html>
+

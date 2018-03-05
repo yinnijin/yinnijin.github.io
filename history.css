@@ -24,12 +24,14 @@ a {
 }
 
 .head-bar {
-	width: 300px;
-	height: 45px;
-	text-align: center;
-	background-color: #ff6666;
-	color: #ffffff;
-	text-shadow: 2px 2px #111111;
+  width: 300px;
+  height: 45px;
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-left: 0px; 
+  text-align: center;
 	
 }
 
@@ -60,13 +62,6 @@ a {
 	margin-top: 40px;
 }
 
-
-
-/* 
-	Albums 
-			*/
-
-
 .albums-album-wrapper {
 	top: -500px;
 	width: 135px;
@@ -74,35 +69,9 @@ a {
 	margin: 0px;
 	display: inline-block;
 
-
-
 }
 
-.albums-album-art {
-	width: 130px;
 
-}
-
-.albums-album-name {
-
-	top: -500px;
-	text-align: center;
-	font-size: 120%;
-	font-family: 'Dosis';
-	font-size: solid black;
-	font-weight: bold;
-}
-
-.albums-artist-name {
-	text-align: center;
-	font-size: 25%;
-	font-style: italic;
-
-}
-
-/*
-	Back button layout
-						*/
 
 .back-button {
 	width: 50px;
@@ -110,66 +79,13 @@ a {
 	display: inline-block;
 	margin-left: 10px;
 	margin-top: -60px;
-	border: 1px solid rgb(255,255,255);
-	border-radius: 5px;
 	float: left;
 	text-align: center;
 	text-shadow:none;
 	padding-top: 2px;
-	border-color: orange;
-
 }
 
-/* 
-	Songs 
-			*/
-.songs-info-wrapper {
-	width: 150px;
-	height: 150px;
-	margin-left: -55px;
-	margin-top: 10px;
-	display: inline-block;
-	float: left;
-}
 
-.songs-album-art {
-	display: block;
-	width: 110px;
-	margin-left: 18px;
-	float: left;
-	text-align: center;
-	
-}
-
-.songs-album-name {
-	font-family: 'Dosis';
-	font-size: 150%;
-	margin-top: 20px;
-	font-weight: bold;
-
-}
-
-.songs-artist-name {
-	margin-top: -15px;
-	font-size: 120%;
-	font-style: italic;
-	font-weight: 600;
-}
-
-.songs-album-year {
-	vertical-align: top;
-	font-size: 120%;
-	font-weight: 400;
-}
-
-.songs-list {
-	margin-top: 180px;
-	height: 260px;
-	width: 240px;
-	padding-left: 35px;
-	text-decoration: none;
-
-}
 
 /*
 	Layout for li element within the list
@@ -221,7 +137,7 @@ ol li{
 }
 
 #add-new{
-	font-weight: bold;
+	
 	font-size: 110%;
 	margin-top: 10px;
 	height: 50px;
@@ -283,10 +199,47 @@ li{
     	padding-top: 25px;
     }
 
- 
+ button.form-btn {
 
+  width:70%; 
+height: 60px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
 
+  margin-left: 45px;
+}
 
+button.form-btn.sx {
+  left: 0;
+  border-radius: 5px;
+  background-color: #11111161;
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.bt{
+	margin-top: 30px;
+}
 
 
