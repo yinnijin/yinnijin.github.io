@@ -268,3 +268,10 @@ input {
     color: #888;
     background-color: white;
   }
+
+#forget{
+  color: #888;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}

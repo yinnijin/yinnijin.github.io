@@ -53,8 +53,21 @@ function postCheck()
 
 
 
+function doLime()
+{
+   var dd1 = document.getElementById("d1");
+  
+  
+  dd1.style.backgroundColor="#ff6666";
+}
 
-
+function doLime1()
+{
+   var dd1 = document.getElementById("a1");
+  
+  
+  dd1.style.backgroundColor="#ff6666";
+}
 
 
 
