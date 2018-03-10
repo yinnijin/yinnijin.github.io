@@ -1,7 +1,7 @@
 <html>
 <header>
    <title>Community</title>
-   <link rel="stylesheet" type="text/css" href="schedule.css"/>
+   <link rel="stylesheet" type="text/css" href="blank_achedule.css"/>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </header>
@@ -20,19 +20,27 @@
                     <div class="wrap">
                         <div class="square" ></div>
                         <p id="list">
-                          Schedule list 
+                          Current Schedule
                         </p>
                     </div>
-                    <div class="unit" >
-                            <div class="upper">
-                                    <div class="symbol" >   
-                                       <p class="schedule-name">Running</p>           
-                                       <img class="check" src="images/check.png" alt="The cover of Currents" />
+                    <div id="hide" class="unit1" >
+                            <div class="upper1">
+                                 <p>No current schedule</p> 
+                                 <p>Please create your schedule</p>  
+                            </div>
+                    </div>
+
+                    <div class="unit_current" id="show">
+                            <div class="upper_current">
+                                    <div class="symbol_current" >   
+                                       <p id="write" class="schedule-name"></p>           
+                                       <img class="check" src="images/check.png" alt="The cover of Currents" onclick="doLime();"/>
+                                       
                                     </div>
                                     <div class="diagram">
-                                      <p class = "indicator">3/7</p>
+                                      <p class = "indicator" id="money"></p>
                                       <div class="progress round-conner">
-                                        <div class="curRate round-conner"></div>
+                                        <div class="curRate1 round-conner" id="yellow_row"></div>
                                       </div>
                                       <img class="coin" src="images/coin2.png" alt="The coin symbol">
                                     </div>
@@ -50,42 +58,128 @@
                                 </tr>
                                 <tr>
                                   <td>
-                                    <div class="td">
+                                    <div id="d1" class="td_n">
                                       <div class="checkmark"></div>
                                     </div>
                                   </td>   
                                   <td>
-                                    <div class="td">
+                                    <div class="td_n">
+                                      <div class="checkmark"></div>
+                                    </div>
+                    
+                                  </td> 
+                                  <td>
+                                    <div  class="td_n">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    
+                                  </td>   
+                                  <td>
+                                    <div  class="td_n">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    
+                                  </td>  
+                                  <td>
+                                    <div  class="td_n">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    
+                                  </td>   
+                                  <td>
+                                    <div  class="td_n">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    
+                                  </td>  
+                                    <td>
+                                      <div  class="td_n">
+                                        <div class="checkmark"></div>
+                                        </div> 
+                                      
+                                  </td>    
+                                </tr>
+                              </table>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="wrap">
+                        <div class="square" ></div>
+                        <p id="list">
+                          Past Schedule
+                        </p>
+                    </div>
+                    <div class="unit" >
+                            <div class="upper">
+                                    <div class="symbol" >   
+                                       <p class="schedule-name">Running  </p>  
+                                       <div class="date">(2/3/2018-2/9/2018)</div>         
+                                       <!-- <img class="check" src="images/check.png" alt="The cover of Currents" onclick="doLime1();"/> -->
+                                       
+                                    </div>
+                                    <div class="diagram">
+                                      <p class = "indicator" id="money">$7.14/$10</p>
+                                      <div class="progress round-conner">
+                                        <div class="curRate round-conner" id="yellow_row"></div>
+                                      </div>
+                                      <img class="coin" src="images/coin2.png" alt="The coin symbol">
+                                    </div>
+                            </div>
+                            <div class="lower">
+                              <table class="table">
+                                <tr>
+                                  <th>D1</th>
+                                  <th>D2</th>
+                                  <th>D3</th>
+                                  <th>D4</th>
+                                  <th>D5</th>
+                                  <th>D6</th>
+                                  <th>D7</th> 
+                                </tr>
+                                <tr>
+                                  <td>
+                                      <!-- <div class="td"  id="a1" onclick="change_color(event)">
+                                        <div class="checkmark"></div>
+                                      </div> -->
+                                       <div class="td1"  id="a1" onclick="change_color(event)">
+                                        <div><span class="cross">&#x2716;<span></div>
+                                      </div>
+
+                                  </td>   
+                                  <td>
+                                    <div class="td" id="a2" onclick="change_color(event)">
                                       <div class="checkmark"></div>
                                     </div>
                                     </div>
                                   </td> 
                                   <td>
-                                    <div  class="td">
+                                    <div  class="td" id="a3" onclick="change_color(event)">
                                      <div class="checkmark"></div>
                                     </div> 
                                     </div>
                                   </td>   
                                   <td>
-                                    <div  class="td">
-                                     <div class="checkmark"></div>
-                                    </div> 
+                                    <div class="td1"  id="a1" onclick="change_color(event)">
+                                        <div><span class="cross">&#x2716;<span></div>
                                     </div>
                                   </td>  
                                   <td>
-                                    <div  class="td">
+                                    <div  class="td" id="a5" onclick="change_color(event)">
                                      <div class="checkmark"></div>
                                     </div> 
                                     </div>
                                   </td>   
                                   <td>
-                                    <div  class="td">
+                                    <div  class="td" id="a6" onclick="change_color(event)">
                                      <div class="checkmark"></div>
                                     </div> 
                                     </div>
                                   </td>  
                                     <td>
-                                      <div  class="td">
+                                      <div class="td" id="a7" onclick="change_color(event)">
                                         <div class="checkmark"></div>
                                         </div> 
                                       </div>
@@ -95,11 +189,88 @@
                             </div>
                     </div>
 
+                    <div class="unit" >
+                            <div class="upper">
+                                    <div class="symbol" >   
+                                       <p class="schedule-name">Yoga  </p>  
+                                       <div class="date">(2/20/2018-2/26/2018)</div>         
+                                       <!-- <img class="check" src="images/check.png" alt="The cover of Currents" onclick="doLime1();"/> -->
+                                       
+                                    </div>
+                                    <div class="diagram">
+                                      <p class = "indicator" id="money">$7.14/$10</p>
+                                      <div class="progress round-conner">
+                                        <div class="curRate round-conner" id="yellow_row"></div>
+                                      </div>
+                                      <img class="coin" src="images/coin2.png" alt="The coin symbol">
+                                    </div>
+                            </div>
+                            <div class="lower">
+                              <table class="table">
+                                <tr>
+                                  <th>D1</th>
+                                  <th>D2</th>
+                                  <th>D3</th>
+                                  <th>D4</th>
+                                  <th>D5</th>
+                                  <th>D6</th>
+                                  <th>D7</th> 
+                                </tr>
+                                <tr>
+                                     
+                                  <td>
+                                    <div class="td" id="a2" onclick="change_color(event)">
+                                      <div class="checkmark"></div>
+                                    </div>
+                                    </div>
+                                  </td> 
+                                  <td>
+                                    <div  class="td" id="a3" onclick="change_color(event)">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    </div>
+                                  </td>   
+                                  <td>
+                                       <div class="td1"  id="a1" onclick="change_color(event)">
+                                        <div><span class="cross">&#x2716;<span></div>
+                                      </div>
+
+                                  </td>   
+                                  <td>
+                                    <div  class="td" id="a5" onclick="change_color(event)">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    </div>
+                                  </td>   
+                                  <td>
+                                    <div  class="td" id="a6" onclick="change_color(event)">
+                                     <div class="checkmark"></div>
+                                    </div> 
+                                    </div>
+                                  </td>  
+                                    <td>
+                                      <div class="td" id="a7" onclick="change_color(event)">
+                                        <div class="checkmark"></div>
+                                        </div> 
+                                      </div>
+                                  </td> 
+                                  <td>
+                                    <div class="td1"  id="a1" onclick="change_color(event)">
+                                        <div><span class="cross">&#x2716;<span></div>
+                                    </div>
+                                  </td>
+
+                                </tr>
+                              </table>
+                            </div>
+                    </div>
+
          </div>
+
          <div class="new-schedule" >
-            <div class="create" >
+            <div class="create" onclick="newSchedule()">
               <i  class="material-icons" style="font-size: 45px" >
-                <a href="createSchedule.html">add_circle</a>  
+                add_circle  
               </i>
             </div>  
          </div>
@@ -108,6 +279,7 @@
 
         </div>
     </div>  
+   <script src="punch_in.js"></script>
 </body>
 </html>
 

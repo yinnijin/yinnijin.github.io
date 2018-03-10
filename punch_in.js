@@ -1,4 +1,32 @@
 var current_id = 0;
+var name=null;
+var money=null;
+  name = getUrlVars()["sname"];
+  money = getUrlVars()["sources"];
+ 
+  if(name == "undefined" || name === null){
+    document.getElementById("show").style.display = "none";
+    document.getElementById("hide").style.display = "block";     
+  }else{
+    document.getElementById("show").style.display = "block";
+    document.getElementById("hide").style.display = "none";  
+    document.getElementById("write").innerHTML=name;
+    document.getElementById("money").innerHTML="$0.00/$"+money;
+  };
+
+
+ function newSchedule(){
+  var displayValue = document.getElementById('show').style.display;
+  //alert(displayValue);
+  if(displayValue == "block"){
+    alert("You can't create a new schedule, since you currently have an unfinished schedule.");
+  }
+  if(displayValue == "none"){
+    window.location.href="createSchedule.html";
+  }
+}
+
+
 
 function change_color(event){
 
@@ -52,13 +80,25 @@ function postCheck()
   }
 
 
+function getUrlVars() {
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+return vars;
+}
 
 function doLime()
 {
    var dd1 = document.getElementById("d1");
+   var dd2 = document.getElementById("yellow_row");
+   var dd3 = document.getElementById("money");
   
   
-  dd1.style.backgroundColor="#ff6666";
+  dd1.style.backgroundColor="rgb(136,162,161)";
+  dd2.style.width="14.3%";
+  dd3.innerHTML="$1.43/$"+money;
+
 }
 
 function doLime1()
@@ -68,6 +108,7 @@ function doLime1()
   
   dd1.style.backgroundColor="#ff6666";
 }
+
 
 
 
