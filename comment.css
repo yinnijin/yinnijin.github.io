@@ -15,6 +15,8 @@ body {
 }
 
 
+
+
 .head-bar {
   width: 300px;
   height: 45px;
@@ -22,9 +24,22 @@ body {
 
   color: white;
   text-shadow: 1px 1px black;
- text-align: center;
+  text-align: center;
   font-family: Avenir, sans-serif;
 }
+
+.container{
+  width: 300px;
+  height: 450px;
+  display: block;
+  overflow: auto;
+
+}
+
+.container::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 .header{
   font-size: 16pt;
@@ -79,6 +94,9 @@ body {
   background-color: #1111110d;
   border-radius: 3px;
   border: 4px solid #888;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .body .message {
@@ -97,6 +115,7 @@ body {
     margin-left: 10px;
     border-radius: 50%;
     margin-bottom: 5px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 .sendTerm {
@@ -106,7 +125,7 @@ body {
   padding: 5px;
   height: 36px;
   outline: none;
-  color: #9DBFAF;
+  color: black;
   
   position: absolute;
   top: 495px;
@@ -120,14 +139,14 @@ body {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 250px;
- position: absolute;
+  position: absolute;
   top: 495px;
 }
 
 #newpost{
-  display: none;
+  display: block;
 }
 
 .time{
