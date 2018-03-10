@@ -73,7 +73,7 @@ h1{
   border-radius: 5px;
   outline: none;
   color: #9DBFAF;
-  margin-left: 7px;
+  margin-left: 23px;
   margin-top: 5px;
 }
 
@@ -100,7 +100,7 @@ h1{
 .bg{
   display: block;
   width: 300px;
-  height: 485px;
+  height: 440px;
 
 }
 
@@ -231,7 +231,7 @@ h1{
 
 .scroll{
   width: 100%;
-  height: 430px;
+  height: 380px;
   overflow-y: scroll;
 
 }
@@ -275,3 +275,81 @@ button{
   color: black;
 
 }
+
+.new-schedule{
+  width: 298px;
+  height: 50px;
+  display: inline-block;
+  float: left;
+  margin-left: 1px;
+  position: absolute;
+  text-align: center;
+/*  background-color: rgb(182, 113, 154);*/
+/*  box-shadow: 0px -0.5px 1px 0px #888888;*/
+
+}
+
+.create{
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 43%;
+  bottom: 0;
+  box-shadow: none;
+  border:none;
+
+}
+
+button.form-btn {
+
+  width:100%; 
+height: 45px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+
+/*  margin-left: 45px;*/
+}
+
+button.form-btn.sx {
+  left: 0;
+/*  border-radius: 5px;*/
+  background-color: rgb(152, 114, 151);
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+button.login{
+  float: right;
+  margin-right: 1px;
+}
+
+/*.community{
+  float: left;
+  width: 143.1px;
+}
+
+.goup{
+  float: right;
+}*/
