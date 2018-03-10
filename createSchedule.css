@@ -56,8 +56,9 @@ h1{
 }
 
 .container {
-  margin:20px 0px 0px 10px;
-  width:40%;
+  margin:0px 0px 0px 10px;
+  width:80%;
+  height: 500px;
   padding:10px 20px 30px;
   font-family: 'Dosis';
   font-weight:700;
@@ -72,23 +73,23 @@ h1{
 
 .unit{
 
-  padding-top:40px;
+  padding-top:20px;
   color:black;
 }
 
 
 
 .reminder {
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 16px;
   color: grey;
   width: 220px;
 }
 
-input {
+.typein {
   border:none;
   border-bottom:1px solid #888;
-  padding:10px 0;
+margin-top: 10px;
   width:220px;
   display:block;
   font-size:16px;
@@ -117,59 +118,22 @@ label {
 
 
 
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+.typein:focus ~ .bar:before, .typein:focus ~ .bar:after {
   width:50%;
 }
 
-input:valid ~ .bar:before, input:valid ~ .bar:after{
+.typein:valid ~ .bar:before, .typein:valid ~ .bar:after{
   background:black;  
 }
 
-input:invalid ~ .bar:before, input:invalid ~ .bar:after{
+.typein:invalid ~ .bar:before, .typein:invalid ~ .bar:after{
   background:black;  
 }
 
-button,
-button::after {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-button {
-  width:50px;
-  height: 30px;
-  background: #ff6666;
-  border: 1px solid #ff6666;
-  border-radius: 5px;
-  color: white;
-  display: block;
-  font-size: 12pt;
-  font-weight: bold;
-  margin: 40px 0px 0px 100px;
-  padding: 1px 0px 0px 0px;
-  position: relative;
-  text-transform: uppercase;
-  font-family: 'Dosis';
-}
-
-button::before,
-button::after {
-
-  background: #ff6666;
-  content: '';
-  position: absolute;
-
-}
-
-button:hover {
-  color: #ff6666;
-}
 
 
-input::-webkit-inner-spin-button,
-input::-webkit-clear-button {
+.typein::-webkit-inner-spin-button,
+.typein::-webkit-clear-button {
   display: none;
 }
 
@@ -183,8 +147,8 @@ input::-webkit-clear-button {
   color: #ff6666;
 }*/
 
-input,
-button{
+.typein,
+.button{
   outline: none !important; 
 }
 
@@ -215,7 +179,7 @@ button{
 
 .signIn input,
 .signUp .w100 {
-  width: 85%;
+  width: 80%;
 }
 
 .signUp {
@@ -300,7 +264,7 @@ button{
   margin: 0px 0px 0px 8px; 
 }
 
- button.form-btn {
+.form-btn {
 
   width:70%; 
 height: 50px;
@@ -311,30 +275,153 @@ height: 50px;
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
-  margin-top: 0px;
-  margin-left: 50px;
+
+
 }
 
-button.form-btn.sx {
+.form-btn.sx {
   left: 0;
   border-radius: 5px;
   background-color: #11111161;
   color: #fff;
   transition:all 0.3s linear;
-  margin-top: 0px;
+  margin-top: 15px;
   margin-bottom: 10px;
+  margin-left: 5px;
 }
 
-button.form-btn.sx:hover {
+.form-btn.sx:hover {
   background-color:black;
   color: #fff;
 }
 
-button.form-btn.sx.back {
+.form-btn.sx.back {
   background-color: #ff6666;
   transition:all 0.3s linear;
 }
-
-button.form-btn.sx.back:hover {
+.form-btn.sx.back:hover {
   background-color: rgba(0, 0, 0, 0.35);
+}
+
+.unit2{
+  margin-left: 0px;
+  /*padding-top:65px;*/
+  color:black;
+  display: inline-block;
+  font-weight: bolder;
+}
+
+
+
+.amount{
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  width: 300px;
+  height: 80px;
+}
+
+  .custom-select {
+    position: relative;
+    display: inline-block; 
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    color: #888;
+    background-color: white;
+  }
+  .unit3{
+  margin-left: 20px;
+  /*padding-top:65px;*/
+  color:black;
+  display: inline-block;
+  font-weight: bolder;
+}
+
+.
+
+.des{
+  color: grey;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.left{
+  float: left;
+  background-color: white;
+  display: inline-block;
+  height: 35px;
+  width: 220px;
+  border:1px solid white;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(182, 113, 154);
+  font-size: 16px;
+}
+
+
+ .help{
+  margin-top: 30px;
+  height: 160px;
+
+  margin-bottom: 0px;
+  width: 240px;
+ }
+.name {
+  width:220px;
+  height:35px;
+  font-size: 120%;
+  font-family: 'Dosis';
+  font-size: solid black;
+  font-weight: bold;
+  text-align: left;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+  
+    top: 105;
+    left: 31;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  width: 300px;
+  height: 530px;
+}
+
+#text{
+  background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+p{
+  margin:0 0 0 0;
+  color: grey;
+  font-size:14px;
+  font-family: Avenir, sans-serif;
+  font-weight: normal;
+}
+
+.scroll{
+  height: 390px;
+  width:240px;
+  overflow: auto;
 }

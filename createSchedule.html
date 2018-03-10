@@ -8,32 +8,74 @@
   </head>
     <body>
       <div id="screen">
+        <div id="overlay" onclick="off()">
+            <div id="text"></div>
+         </div>
         <div class="head-bar">
-          <h1>Schedule</h1>
+          <h1>Add New</h1>
           <div class="back-button">
             <i class="material-icons">
-              <a href="Schedule.html">keyboard_arrow_left</a>
+              <a href="blank_schedule.html">keyboard_arrow_left</a>
             </i>           
           </div>               
         </div>
         <div class="container">
-          <form class="signUp">
+          <form class="signUp" method="GET" action="blank_schedule.html" name="schedule">
+            <div class="scroll">
             <div class="unit">Schedule Name</div>
             <div class="form-control">
-              <input type="text" placeholder="Enter new schedule name" required />
+              <input class="typein" type="text" placeholder="Enter new schedule name" required name="sname"/>
               <span class="bar"></span>
             
             <div class="unit">Reminder (e.g. 00:00 AM)</div>
             <div class="time">
-              <input id="time" type="time">
+              <input class="typein" id="time" type="time"/>
             </div>
-            <div class="reminder">
+
+    <div class="amount">
+      <div class="unit">Place your bid amount:</div>
+    <div class="unit2">$</div>
+    <select name="sources" id="sources" class="custom-select" placeholder="Source Type" onchange="send()">
+
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+  </select>
+  <div class="unit3"> in total</div>
+<p class="des">You can get back $1.43 per day.</p>
+</div>
+    <div class="help">         
+              <div class="left" onclick="on5()">
+              <div class="name" >- How does a schedule work?</div>
+              </div>    
+        
+              <div class="left" onclick="on1()">
+              <div class="name" >- Why do I bid money?</div>
+              </div>
+
+              <div class="left" onclick="on2()">
+              <div class="name" >- How can I get money back?</div>
+              </div>
+                            
+              <div class="left" onclick="on3()">
+               <div class="name" >- What if I fail to punch in?</div>
+              </div>
+
+              <div class="left" onclick="on4()">
+              <div class="name" >- How do I get rewards?</div>
+              </div>
+    </div>
+    </div>
+  </div>
+            <!-- <div class="reminder">
               <p>Remember: Each schedule cycle includes 7 days. You need to record your daily accomplishment to follow the schedule.</p>
-            </div>  
-            
+            </div>   -->
+            <input type="submit" class="form-btn sx log-in" value="Create"></input>
           </form>
-          <button class="form-btn sx log-in"><a href="money.html">Add</a></button>
+          
         </div>
       </div>
+<script src="money.js"></script>
     </body>
     </html>
