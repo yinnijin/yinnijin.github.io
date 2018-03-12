@@ -93,11 +93,19 @@ function doLime()
    var dd1 = document.getElementById("d1");
    var dd2 = document.getElementById("yellow_row");
    var dd3 = document.getElementById("money");
+   // var a = parseFloat("money");
+   // console.log(a)
+   // var moneyget= 0.143 * a ;
+   var moneyget1 = 0.143 * money;
+   var moneyget2 = moneyget1.toFixed(2); 
+   // console.log ( moneyget)
+   console.log( moneyget1)
+   console.log( moneyget2)
   
   
   dd1.style.backgroundColor="rgb(136,162,161)";
   dd2.style.width="14.3%";
-  dd3.innerHTML="$1.43/$"+money;
+  dd3.innerHTML="$"+moneyget2+"/$"+money;
 
 }
 
