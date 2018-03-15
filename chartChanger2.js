@@ -1,4 +1,11 @@
  var dataToDisplay = 1;
+ var weight=0;
+ var heart=0;
+ var fat=0;
+  weight = getUrlVars()["weight"];
+  heart = getUrlVars()["heart"];
+  fat = getUrlVars()["fat"];
+
  var Data = [
                 {
                     "name": "  Weight(KG)",
@@ -34,7 +41,7 @@
                         { "week": "Week 1", "value": 80 },
                         { "week": "Week 2", "value": 78 },
                         { "week": "Week 3", "value": 76 },
-                        { "week": "Week 4", "value": 75 }
+                        { "week": "Week 4", "value": weight }
                     ]
                 },
                 {
@@ -43,7 +50,7 @@
                         { "week": "Week 1", "value": 61 },
                         { "week": "Week 2", "value": 73 },
                         { "week": "Week 3", "value": 66 },
-                        { "week": "Week 4", "value": 80 }
+                        { "week": "Week 4", "value": heart }
                     ]
                 },
                 {
@@ -52,7 +59,7 @@
                         { "week": "Week 1", "value": 30 },
                         { "week": "Week 2", "value": 28 },
                         { "week": "Week 3", "value": 29 },
-                        { "week": "Week 4", "value": 25 }
+                        { "week": "Week 4", "value": fat }
                     ]
                 },
                 
@@ -210,3 +217,10 @@
 // Calling function
 fnDrawMultiLineChart(Data_2, "divChartTrends", "Personal Data");
 
+function getUrlVars() {
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+return vars;
+}
