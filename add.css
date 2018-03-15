@@ -390,10 +390,11 @@ button.form-btn.sx.back:hover {
   margin: 0px 0px 0px 8px; 
 }
 
- button.form-btn {
 
-  width:70%; 
-height: 50px;
+.form-btn {
+
+  width: 100px; 
+  height: 50px;
   bottom: 0;
   border: 0;
   font-family: 'Dosis';
@@ -401,32 +402,30 @@ height: 50px;
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 70px;
+
+
 }
 
-button.form-btn.sx {
+.form-btn.sx {
   left: 0;
   border-radius: 5px;
   background-color: #11111161;
   color: #fff;
   transition:all 0.3s linear;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 10px;
+  margin-left: 60px;
 }
 
-button.form-btn.sx:hover {
+.form-btn.sx:hover {
   background-color:black;
   color: #fff;
 }
 
-button.form-btn.sx.back {
+.form-btn.sx.back {
   background-color: #ff6666;
   transition:all 0.3s linear;
 }
-
-button.form-btn.sx.back:hover {
+.form-btn.sx.back:hover {
   background-color: rgba(0, 0, 0, 0.35);
 }
-
-
