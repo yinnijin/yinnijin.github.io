@@ -3,7 +3,7 @@ function send() {
 	var e = document.getElementById("sources");
 var x = e.options[e.selectedIndex].value;
 var y=x/7;
-	 document.getElementById("new").innerHTML = "You can get back $"+ Number.parseFloat(y).toFixed(2)+ " per day.";
+	 document.getElementById("new1").innerHTML = "You can get back $"+ Number.parseFloat(y).toFixed(2)+ " per day.";
 
 }
 
