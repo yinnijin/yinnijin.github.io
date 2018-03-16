@@ -143,7 +143,7 @@ button{
 	width: 70px;
 	height: 70px;
 	float: left;
-	margin-top: 10px;
+	margin-top: 6px;
 	margin-left: 115px;
 	margin-bottom: 10px;
 	display: inline-block;
@@ -172,7 +172,7 @@ button{
 .unit_current{
 	margin-left: 1px;
 	width: 298px;
-	height: 390px;
+	height: 410px;
 	border-bottom: 20px solid rgb(232,232,232);
 	border-top: 1px solid rgba(166,166,166,0.6);
 	
@@ -256,6 +256,14 @@ button{
 	height: 80px;
 /*	border-bottom: 1px solid rgba(166,166,166,0.6);*/
 	margin-top: 15px;
+}
+
+.lower1{
+	margin-left: 1px;
+	width: 298px;
+	height: 80px;
+/*	border-bottom: 1px solid rgba(166,166,166,0.6);*/
+	margin-top: 35px;
 }
 
 .table{
@@ -349,11 +357,11 @@ span{
 
 .symbol_current{
 	width: 300px;
-	height: 170px;
+	height: 197px;
 }
 
 .punch_in{
-	margin-top: 90px;
+	margin-top: 98px;
 /*	margin-left: 100px;*/
 	text-align: center;
 	font-weight: bolder;
@@ -385,3 +393,4 @@ span{
 	font-weight: bolder;
 	display: block;
 }
+

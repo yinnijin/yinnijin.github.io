@@ -3,6 +3,15 @@ var name=null;
 var money=null;
   name = getUrlVars()["sname"];
   money = getUrlVars()["sources"];
+  var myDate = new Date();
+  var d = myDate.getMonth() + 1;
+  var b = addDays(myDate,7);
+  var e = b.getMonth() + 1;
+  var a = "("+d+"/"+myDate.getDate()+"/"+myDate.getFullYear()+"-"+e+"/"+b.getDate()+"/"+b.getMonth()+b.getFullYear()+")";
+  // e+"/"+b.getDate()+"/"+b.getMonth();
+
+  // myDate.getMonth();
+  // myDate.getDate();
  
   if(name == "undefined" || name === null){
     document.getElementById("show").style.display = "none";
@@ -11,8 +20,14 @@ var money=null;
     document.getElementById("show").style.display = "block";
     document.getElementById("hide").style.display = "none";  
     document.getElementById("write").innerHTML=name;
+    document.getElementById("date").innerHTML= a;
     document.getElementById("money").innerHTML="$0.00/$"+money;
   };
+
+console.log(a)
+console.log(b)
+console.log(e)
+console.log(myDate)
 
 
  function newSchedule(){
@@ -26,7 +41,11 @@ var money=null;
   }
 }
 
-
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
 
 function change_color(event){
 
