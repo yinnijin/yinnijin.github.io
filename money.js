@@ -14,7 +14,7 @@ function on1() {
 
 function on2() {
     document.getElementById("overlay").style.display = "block";
-    document.getElementById("text").innerHTML = "Record your activity by uploading photos on time to prove you finish daily goal, then you can get back your money on that day.";
+    document.getElementById("text").innerHTML = "Record your activity by punching in on time to prove that you finish daily goal, then you can get back your money on that day.";
 }
 
 function on3() {
@@ -24,9 +24,12 @@ function on3() {
 
 function on4() {
     document.getElementById("overlay").style.display = "block";
-    document.getElementById("text").innerHTML = " If some one in your group fails to punch in on that day, anyone who succeed in punching in can share his money as a reward.";
+    document.getElementById("text").innerHTML = " If some one in your group fails to punch in on that day, anyone who succeed can share his money as a reward.";
 }
-
+function on5() {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("text").innerHTML = " Each schedule cycle lasts 7 days. You need to record your daily accomplishment to follow the schedule.";
+}
 function off() {
     document.getElementById("overlay").style.display = "none";
 }
