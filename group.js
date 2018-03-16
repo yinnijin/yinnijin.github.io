@@ -30,11 +30,14 @@
 // 	$("block").click(function(){
 //     var x = $("p").position();
 //     alert("Top: " + x.top + " Left: " + x.left);
-// });
+// }
+
 
 	var $cont = $('.container');
 	// $cont[0].scrollTop = $cont[0].scrollHeight;//Always scrolling down to the bottom of container
     $('input[type="text"]').val('');//reset the input field
+    
+	$cont[0].scrollTop = 0;
 	
 	$(':input','.sendTerm').val(''); 
 }
