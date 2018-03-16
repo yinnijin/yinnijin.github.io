@@ -17,14 +17,20 @@
               <h1></h1>
       </div>                         
       
-      
-  <form class="signIn">
-    <h3>PLEASE LOG IN</h3>
-    <input class="w100" type="email" placeholder="User name" reqired autocomplete='off' />
-    <input type="password" placeholder="Password" reqired />
-    <a href="user_signup.html" id="forget" class="forget"><h2>forget password?</h2></a>
-    <button class="form-btn sx log-in" type="button"><a href="homepage.html">Log In</a></button>
 
+<form class="signUp" method="GET" action="homepage.html" name="newData">
+    <h3>PLEASE LOG IN</h3>
+    <div class="form-control">
+      <input type="text" placeholder="User name" required />
+      <span class="bar"></span>
+     
+    </div>
+    <div class="form-control">
+      <input type="password" placeholder="Password" required />
+      <span class="bar"></span>
+    </div>  
+ <a href="user_signup.html" id="forget" class="forget"><h2>forget password?</h2></a>
+      <input type="submit" class="form-btn sx log-in" value="Add"></input>
   </form>
 
 </div>
