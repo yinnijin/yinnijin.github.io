@@ -93,6 +93,7 @@ function doLime()
    var dd1 = document.getElementById("d1");
    var dd2 = document.getElementById("yellow_row");
    var dd3 = document.getElementById("money");
+   var dd4 = document.getElementById("punch_in");
    // var a = parseFloat("money");
    // console.log(a)
    // var moneyget= 0.143 * a ;
@@ -106,6 +107,7 @@ function doLime()
   dd1.style.backgroundColor="rgb(136,162,161)";
   dd2.style.width="14.3%";
   dd3.innerHTML="$"+moneyget2+"/$"+money;
+  dd4.innerHTML="Congrats, keep going!";
 
 }
 
