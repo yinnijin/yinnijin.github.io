@@ -7,7 +7,7 @@ var money=null;
   var d = myDate.getMonth() + 1;
   var b = addDays(myDate,7);
   var e = b.getMonth() + 1;
-  var a = "("+d+"/"+myDate.getDate()+"/"+myDate.getFullYear()+"-"+e+"/"+b.getDate()+"/"+b.getMonth()+b.getFullYear()+")";
+  var a = "("+d+"/"+myDate.getDate()+"/"+myDate.getFullYear()+"-"+e+"/"+b.getDate()+"/"+b.getFullYear()+")";
   // e+"/"+b.getDate()+"/"+b.getMonth();
 
   // myDate.getMonth();
