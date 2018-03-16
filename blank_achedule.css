@@ -36,12 +36,12 @@ body {
   font-family: Avenir, sans-serif;
 }
 
-a {
+/*a {
   text-decoration: none;
 
   color: #ffffff;
   font-size: bolder;
-}
+}*/
 
 #screen {
   height: 530px;
@@ -152,7 +152,7 @@ button{
 .unit{
 	margin-left: 1px;
 	width: 298px;
-	height: 240px;
+	height: 280px;
 	border-bottom: 10px solid rgb(232,232,232);
 	border-top: 1px solid rgba(166,166,166,0.6);
 }
@@ -160,7 +160,7 @@ button{
 .unit1{
 	margin-left: 1px;
 	width: 298px;
-	height: 200px;
+	height: 240px;
 	border-bottom: 25px solid rgb(232,232,232);
 	border-top: 1px solid rgba(166,166,166,0.6);
 	
@@ -172,7 +172,7 @@ button{
 .unit_current{
 	margin-left: 1px;
 	width: 298px;
-	height: 280px;
+	height: 390px;
 	border-bottom: 20px solid rgb(232,232,232);
 	border-top: 1px solid rgba(166,166,166,0.6);
 	
@@ -357,4 +357,31 @@ span{
 /*	margin-left: 100px;*/
 	text-align: center;
 	font-weight: bolder;
+}
+
+
+.bonus{
+	margin-left: 15px;
+	margin-top: -5px;
+/*	font-weight: lighter;*/
+	font-size: 15px;
+}
+
+.reward{
+	margin-left: 15px;
+/*	font-weight: lighter;*/
+	font-size: 15px;
+}
+
+.post{
+	color: black;
+}
+
+.goup_activity{
+	color: #888;
+	margin-left: 15px;
+	margin-top: 12px;
+	font-size: 16px;
+	font-weight: bolder;
+	display: block;
 }

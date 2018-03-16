@@ -94,20 +94,32 @@ function doLime()
    var dd2 = document.getElementById("yellow_row");
    var dd3 = document.getElementById("money");
    var dd4 = document.getElementById("punch_in");
+   var dd5 = document.getElementById("bonus")
+   var dd6 = document.getElementById("reward");
+   // var dd4 = document.getElementById("punch_in");
    // var a = parseFloat("money");
    // console.log(a)
    // var moneyget= 0.143 * a ;
    var moneyget1 = 0.143 * money;
    var moneyget2 = moneyget1.toFixed(2); 
+   var bouns_get = 0.23 * money;
+   var bouns_get1 = bouns_get.toFixed(2); 
+   var bouns_get2 = Number.parseFloat(bouns_get1); 
+   var reward_money = Number.parseFloat(moneyget1) + bouns_get2;
+   var reward_money1 = reward_money.toFixed(2); 
    // console.log ( moneyget)
    console.log( moneyget1)
    console.log( moneyget2)
+   console.log( bouns_get2)
+   // console.log( reward_money1)
   
   
   dd1.style.backgroundColor="rgb(136,162,161)";
   dd2.style.width="14.3%";
   dd3.innerHTML="$"+moneyget2+"/$"+money;
   dd4.innerHTML="Congrats, keep going!";
+  dd5.innerHTML="Total extra bonus: $"+bouns_get1;
+  dd6.innerHTML="Total reward earned: $"+reward_money1
 
 }
 
